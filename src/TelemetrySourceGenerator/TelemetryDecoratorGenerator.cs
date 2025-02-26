@@ -9,10 +9,10 @@ public sealed class TelemetryDecoratorGenerator : IIncrementalGenerator
     {
         context
             .RegisterOutputForTelemetry()
-            .RegisterOutputForDecoratedInterfaces()
+            /*.RegisterOutputForDecoratedInterfaces()
             .RegisterOutputForDecoratedInterfaceTypeMaps()
             .RegisterOutputForDependencyInjectionExtensions()
-            .RegisterOutputForWebApplicationExtensions();
-        // .RegisterOutputForInterceptors()
+            .RegisterOutputForWebApplicationExtensions();*/
+        .RegisterOutputForInterceptors();
     }
 }
